@@ -26,8 +26,16 @@
 	git push
 9.查看commit历史
 	git log
+	git log --pretty=oneline(简单显示)
 10.查看某个文件的修改历史
 	git log -p <filename>
 	git log -p -2(查看最近两次的更新的内容)
 11.查看某次commit的修改内容
 	git show <commit-hash-id> 
+12.版本回退
+	git reset --hard HEAD^(退回上一个版本)
+	git reset --hard HEAD^^（退回上上一个版本。。。以此类推）
+	git reset --hard HEAD~100（退回到前一百个版本）
+13.版本回复
+	git reflog(查看所有版本号)
+	git reset --hard 版本号
