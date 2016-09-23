@@ -11,3 +11,8 @@
 	--git commit -m 'readme.txt pushed'(提交备注)
 6.查看提交状态，是否还有未提交
 	--git status
+7.查看具体改了什么内容
+	git diff readme.txt（命令之后，要通过q进行退出，h可以显示所有命令）
+8.每次修改完都必须执行
+	git add readme.txt
+	git commit -m "提交备注，可选"
