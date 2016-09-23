@@ -39,3 +39,14 @@
 13.版本回复
 	git reflog(查看所有版本号)
 	git reset --hard 版本号
+14.查看文件中的内容
+	cat readme.txt
+
+工作区和版本库
+	版本库：.git目录
+	工作区：和版本库同级的所有文件和文件夹
+
+15.未提交之前，进行撤销修改
+	a.删除掉修改的内容，执行git add  和  git commit -m
+	b.退回版本
+	c.git checkout --readme.txt
