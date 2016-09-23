@@ -49,4 +49,10 @@
 15.未提交之前，进行撤销修改
 	a.删除掉修改的内容，执行git add  和  git commit -m
 	b.退回版本
-	c.git checkout --readme.txt
+	c.git checkout -- readme.txt（--后面空格）
+16.删除文件
+	a.直接在目录下删除
+	b.rm readme.txt
+没有commit之前可以使用 git checkout --readme.txt 从版本库中恢复
+commit则彻底删除
+	
