@@ -55,4 +55,20 @@
 	b.rm readme.txt
 没有commit之前可以使用 git checkout --readme.txt 从版本库中恢复
 commit则彻底删除
+
+本地Git仓库和github仓库之间的传输是通过SSH加密的
+17.创建SSH key命令
+	ssh-keygen -t rsa -C "email地址"
 	
+添加一个远程库--create  a new repo.
+--create a new repository on the command line
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/wuhuamian/testgit.git
+	git push -u origin master
+
+--push an existing repository from the command line
+	git remote add origin https://github.com/wuhuamian/testgit.git
+	git push -u origin master
+--import code from another repository
