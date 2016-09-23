@@ -72,3 +72,10 @@ commit则彻底删除
 	git remote add origin https://github.com/wuhuamian/testgit.git
 	git push -u origin master
 --import code from another repository
+18.在本地的testgit仓库下运行
+	git remote add origin https://github.com/wuhuamian/testgit.git
+19.在本地仓库分支master内容推送到远程仓库
+	git push -u origin master（由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的				master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联				起来，在以后的推送或者拉取时就可以简化命令。）
+20.本地提交
+	git push origin master
+
