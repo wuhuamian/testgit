@@ -39,4 +39,5 @@
 13.版本回复
 	git reflog(查看所有版本号)
 	git reset --hard 版本号
+14.git log --pretty=oneline(列出所有提交的备注)
 111111111111111
