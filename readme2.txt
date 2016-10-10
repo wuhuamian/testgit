@@ -45,7 +45,14 @@
 17.git reset --hard 版本号（恢复某次回退的内容）
 18.git checkout -- filename(丢弃工作区的修改)
 19.rm  file  (彻底从版本库中删除掉文件，紧接着执行commit)
+20.git push -u[第一次推送] origin master
+截止到目前，只有一条时间线，在git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。
+21.git checkout -b dev （创建并切换分支）《==》
+22.git branch dev  git checkout dev
+23.git branch （查看分支）
+24.git merge dev (在主分支上合并dev分支内容)
 111111111111111
 222222222222222
 333333333333333
 444444444444444
+555555555555555
