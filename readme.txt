@@ -98,15 +98,18 @@ commit则彻底删除
 	git merge name
 26.删除分支
 	git branch -d name
+
 解决冲突问题
 	1.git checkout -b fenzhi1
 	2.添加内容
-2222222222222222222222
 	3.切换分支（master）
 	4.在添加内容
-88888888888888888888
-55555555555555555555
 	5.master分支上合并fenzhi1
+其中，<<<<HEAD是指主分支修改的内容，>>>>>>fenzhi1是指fenzhi1上修改的内容。。。
+查看内容，修改成和主干上的代码一样即可。
+
+分支管理策略
+	通常合并分支时，git一般使用fast forward  模式，在这种模式下，删除分支后，会丢到分支信息，可以通过-noff禁用 fast forward模式。
 
 
 	
