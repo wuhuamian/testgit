@@ -36,8 +36,12 @@
 	git reset --hard HEAD^(退回上一个版本)
 	git reset --hard HEAD^^（退回上上一个版本。。。以此类推）
 	git reset --hard HEAD~100（退回到前一百个版本）
-13.版本回复
+13.版本恢复
 	git reflog(查看所有版本号)
 	git reset --hard 版本号
 14.git log --pretty=oneline(列出所有提交的备注)
+15.cat filename (退回版本后进行查看详情。。。)
+16.git reflog (查看每次提交的版本号)
+17.git reset --hard 版本号（恢复某次回退的内容）
 111111111111111
+222222222222222
