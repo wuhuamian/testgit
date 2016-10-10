@@ -20,7 +20,7 @@
 通常我们提交git的时候都是：
 	git add .(.代表所有，也可以指定具体某个文件)
 	git commit -m "提交备注"
-	git push
+	git push -u origin master
 实际上我们只有执行两条即可，除非有新的文件要被添加进来
 	git commit -am "提交备注"
 	git push
@@ -39,3 +39,4 @@
 13.版本回复
 	git reflog(查看所有版本号)
 	git reset --hard 版本号
+111111111111111
