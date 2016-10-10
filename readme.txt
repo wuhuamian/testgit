@@ -101,9 +101,10 @@ commit则彻底删除
 解决冲突问题
 	1.git checkout -b fenzhi1
 	2.添加内容
-	3.切换分支
+	3.切换分支（master）
 	4.在添加内容
 88888888888888888888
+	5.master分支上合并fenzhi1
 
 
 	
