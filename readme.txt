@@ -109,14 +109,34 @@ commit则彻底删除
 查看内容，修改成和主干上的代码一样即可。
 
 分支管理策略
-	通常合并分支时，git一般使用fast forward  模式，在这种模式下，删除分支后，会丢到分支信息，可以通过-no-ff禁用 fast forward模式。
+	通常合并分支时，git一般使用fast forward  模式，在这种模式下，删除分支后，会丢到分支信息，可以通过--no-ff禁用 fast forward模式。
 	1.创建一个dev分支
 	2.修改readme.txt内容
 	3.添加到暂存区
 	4.切换回主分支（master）
 	5.合并dev分支，使用命令git merge -no-ff -m "注释" dev
 	6.查看历史记录
-999999999999999
+分支策略：首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。
+
+bug分支：
+	在开发中，会经常碰到bug问题，那么有了bug就需要修复，在git中，分支时很强大的，每个bug都可以通过一个临时分支来修复，修复完成后，合并分支，然后将临时的分支删除掉。
+
+27.git stash (将当前的工作现场隐藏起来)
+28.git stash list (查看工作现场)
+29.git stash apply（恢复现场）
+30.git stash drop (删除现场)
+31.git stash pop （恢复的同时删除stash内容）
+
+多人合作：
+32.git remote （查看远程库的信息）
+33.git remote -v （详细信息）
+
+
+推送分支：push （推送） 
+34.git push origin master
+	fetch（抓取）
+
+
 
 	
 
