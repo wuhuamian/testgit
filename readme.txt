@@ -92,12 +92,18 @@ commit则彻底删除
 	《==》git branch dev（创建） 和 git checkout dev（切换）
 23.查看所有分支	
 	git branch
-24.切换到主分支
-	git checkout master
-25.合并dev分支到当前分支
-	git merge dev(合并后删除Dev分支)
-
+24.切换到分支
+	git checkout name
+25.合并某分支到当前分支
+	git merge name
+26.删除分支
+	git branch -d name
 解决冲突问题
+	1.git checkout -b fenzhi1
+	2.添加内容
+	3.切换分支
+	4.在添加内容
+88888888888888888888
 
 
 	
