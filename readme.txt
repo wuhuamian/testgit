@@ -109,8 +109,13 @@ commit则彻底删除
 查看内容，修改成和主干上的代码一样即可。
 
 分支管理策略
-	通常合并分支时，git一般使用fast forward  模式，在这种模式下，删除分支后，会丢到分支信息，可以通过-noff禁用 fast forward模式。
-
+	通常合并分支时，git一般使用fast forward  模式，在这种模式下，删除分支后，会丢到分支信息，可以通过-no-ff禁用 fast forward模式。
+	1.创建一个dev分支
+	2.修改readme.txt内容
+	3.添加到暂存区
+	4.切换回主分支（master）
+	5.合并dev分支，使用命令git merge -no-ff -m "注释" dev
+	6.查看历史记录
 
 	
 
