@@ -134,7 +134,9 @@ bug分支：
 
 推送分支：push （推送） 
 34.git push origin master
-	fetch（抓取）
+抓取分支：fetch（抓取）
+35.git pull 
+36.git branch --set-upstream dev origin/dev
 
 
 
