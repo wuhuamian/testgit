@@ -15,7 +15,7 @@ heroku使用和操作：
 
 ----$ cd my-project/
 ----$ git init
-----$ heroku git:remote -a eveni
+----$ heroku git:remote -a eveni  --指定和远程哪个库建立关联
 
 3.Deploy your application
 	Commit your code to the repository and deploy it to Heroku using Git.
