@@ -1,0 +1,33 @@
+1.准备工作：
+	a.注册一个Heroku account
+	b.安装jdk8以上
+	c.maven3以上
+2.set up(安装Heroku)
+	Heroku Command Line Interface(CLI)
+3.登录Heroku
+	heroku login
+4.Prepare the app(准备项目)
+	--github上
+	a.git clone https://github.com/用户名/库名.git
+	--Heroku上
+	b.heroku git:clone -a whmapp
+	c.git clone https://git.heroku.com/app名.git
+5.Deploy the app(部署项目到APP)
+	a.创建APP ：heroku create [app名字]（默认是随机命名）
+	b.推送代码到APP：git push heroku master	
+	c.设置保证有一个app运行：Heroku ps:scale web=1
+6.打开项目：
+	Heroku open
+
+----------------------------------------------------------------------------------
+在Heroku网站上重命名APP后在控制台再输入Heroku命令会提示APP not found，解决办法：--
+	git remote rm heroku							--
+	heroku git:remote -a newname						--
+----------------------------------------------------------------------------------
+7.View logs(查看日志)
+	heroku logs --tail
+8.Define a Procfile(定义Procfile文件)
+	内容：web: java -jar target/helloworld.jar
+9.Scale the app(测量APP）
+	your app is running on a single web dyno.
+	查看多少dyno: heroku ps
