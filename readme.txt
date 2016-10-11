@@ -144,6 +144,8 @@ bug分支：
 36.git branch --set-upstream dev origin/dev
 
 
-
+克隆一个git仓库
+	git可以通过很多的协议进行网络通信，其中有三个最主要的协议，分别是ssh,http,git(专职为git服务的协议)
+匿名访问方式：git:// 或者 http.
 	
 
