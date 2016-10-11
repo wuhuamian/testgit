@@ -2,6 +2,11 @@
 2.设置全局用户和email
 	--git config --global user.name "wuhuamian"
 	--git config --global user.email "1746699469@qq.com"
+默认情况下它使用的vim
+	git config --global core.editor 'emacs'(文本编辑器设置)
+	git config user.name/user.email
+	cat ~/.gitconfig(查看配置文件内容)
+
 3.创建版本库
 	--cd D:->mkdir gitme->cd gitme->mkdir testgit->cd testgit->pwd(查看目录)
 	--git init
